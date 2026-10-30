@@ -40,7 +40,7 @@ function Login() {
       await loginWithGoogle();
       navigate("/");
     } catch (err: any) {
-      console.dir(err);
+      // console.dir(err);
 
       const cancelled =
         err?.code === "auth/popup-closed-by-user" ||
@@ -48,8 +48,6 @@ function Login() {
 
       if (!cancelled) {
         setError({ message: "Google sign-in failed. Please try again." });
-      } else {
-        setError({ message: "Server Error: try again later" });
       }
     } finally {
       setGoogleLoading(false);
@@ -184,7 +182,8 @@ function Login() {
             className="flex w-full items-center justify-center gap-2.5 rounded-lg border border-line bg-white px-4 py-2.5 text-sm font-medium transition hover:bg-forest-tint focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest"
           >
             <FcGoogle size={18} />
-            {googleLoading ? "Waiting for Google..." : "Continue with Google"}
+            {/* {googleLoading ? "Waiting for Google..." : "Continue with Google"} */}
+            Continue with Google
           </button>
         </div>
 

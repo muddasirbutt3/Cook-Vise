@@ -13,3 +13,15 @@
   --color-danger: #b3402a;
   --color-danger-tint: #fbeae6;
 }
+@media (max-width: 767px) {
+  html {
+    scrollbar-width: none; /* Firefox */
+  }
+  html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+}
+
+body {
+  overflow-x: clip;
+}

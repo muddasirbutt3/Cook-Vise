@@ -286,7 +286,8 @@ export default function Signup() {
             className="flex w-full items-center justify-center gap-2.5 rounded-lg border border-line bg-white px-4 py-2.5 text-sm font-medium transition hover:bg-forest-tint focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest"
           >
             <FcGoogle size={18} />
-            {googleLoading ? "Waiting for Google..." : "Sign up with Google"}
+            {/* {googleLoading ? "Waiting for Google..." : "Sign up with Google"} */}
+            Sign up with Google
           </button>
         </div>
 
